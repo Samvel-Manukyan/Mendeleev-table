@@ -1,0 +1,419 @@
+body {
+    width: 1600px;
+    height: 800px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    background: url('../img/background.jpg') center center/cover;
+}
+
+table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    counter-reset: table;
+    margin-top: 170px;
+}
+
+section svg {
+    width: 0;
+    height: 0;
+}
+
+text {
+    visibility: hidden;
+}
+
+section:hover text {
+    visibility: visible;
+    fill: #FAF8FF;
+    stroke:none;
+    stroke-width: 0.6;
+    font-size: 30px;
+    stroke-dasharray: 660;
+    animation-iteration-count: 1;
+    animation: animateText 2.7s cubic-bezier(0.2, 0.19, 0.9, .1) forwards;
+}
+
+caption {
+    height: 90px;
+}
+
+section {
+    width: 65px;
+    height: 60px;
+    border-radius: 5px;
+    transition: transform 1s;
+}
+
+ins {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+}
+
+ruby {
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 9px;
+}
+
+rt {
+    font-size: 9px;
+}
+
+button {
+    width: 80px;
+    height: 35px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+span {
+    font-size: 15px;
+}
+
+tfoot {
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 13px;
+}
+
+.title {
+    font-size: 30px;
+    margin-top: -245px;
+    margin-left: 420px;
+}
+
+.subtitle {
+    position: absolute;
+    font-size: 15px;
+    margin-top: -235px;
+    margin-left: 29px;
+}
+
+.span_1 {
+    position: absolute;
+    margin-left: 43px;
+    margin-top: -216px;
+}
+
+.span_2 {
+    position: absolute;
+    margin-left: 1202px;
+    margin-top: -216px;
+}
+
+.blackboard {
+    width: 290px;
+    height: 78px;
+    margin-bottom: 10px;
+    border: 1px solid;
+    margin-left: 350px;
+    border-radius: 10px;
+    background-color: #228838;
+}
+
+.period {
+    position: absolute;
+    margin-top: 183px;
+    margin-left: 138px;
+    transform: rotate(-90deg);
+}
+
+.group .red {
+    background: none;
+    transition: transform 1s;
+}
+
+.group .violet {
+    background: none;
+    transition: transform 1s;
+}
+
+.test_td {
+    overflow: hidden;
+    position: relative;
+}
+.some_test {
+    position: absolute;
+    left: 0;
+    top: -170px;
+    animation: td_table linear 18s infinite;
+}
+
+.tbody_2 tr:before {
+    display: none;
+}
+
+.td_item section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.text_mendeleev {
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 355px;
+    font-size: 10px;
+}
+
+.periodic_title {
+    position: absolute;
+}
+
+.td_item section {
+    margin-bottom: -15px;
+}
+
+.td_item .orange {
+    background: none;
+}
+
+.td_item .light_blue {
+    background: none;
+}
+
+.td_item .blue {
+    background: none;
+}
+
+.td_item .light_violet {
+    background: none;
+}
+
+.td_item .yellow {
+    background: none;
+}
+
+.icon_1 {
+    position: absolute;
+    margin-left: 55px;
+    margin-top: 13px;
+}
+
+.icon_2 {
+    position: absolute;
+    margin-top: 13px;
+    transform: rotateY(180deg);
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tbody_1 tr:before {
+    counter-increment: table;
+    content: "" counter(table) ".";
+}
+
+.rotate {
+    animation: rotate 2s ease-in-out;
+}
+
+.rotate ruby {
+    animation: rotate 2s ease-in-out;
+}
+
+.rotate ins {
+    animation: rotate 2s ease-in-out;
+}
+
+.rotate a {
+    animation: rotate 2s ease-in-out;
+}
+
+.rotate_reverse {
+    animation: rotateRivers 2s ease-in-out;
+}
+
+.rotate_reverse ruby {
+    animation: rotateRivers 2s ease-in-out;
+}
+
+.rotate_reverse ins {
+    animation: rotateRivers 2s ease-in-out;
+}
+
+.rotate_reverse a {
+    animation: rotateRivers 2s ease-in-out;
+}
+
+.maximise {
+    transform: scale(1.03);
+}
+
+.minimise {
+    transform: scale(0.8);
+}
+
+.red {
+    background: linear-gradient(180deg, whitesmoke, #EF0000);
+}
+
+.blue {
+    background: linear-gradient(180deg, whitesmoke, #0000EC);
+}
+
+.light_blue {
+    background: linear-gradient(180deg, whitesmoke, #0059FF);
+}
+
+.yellow {
+    background: linear-gradient(180deg, whitesmoke, #FFFF00);
+}
+
+.green {
+    background: linear-gradient(180deg, whitesmoke, #00C900);
+}
+
+.violet {
+    background: linear-gradient(180deg, whitesmoke, #7900D0);
+}
+
+.light_violet {
+    background: linear-gradient(180deg, whitesmoke, #CE00FF);
+}
+
+.orange {
+    background: linear-gradient(180deg, whitesmoke, #FF6500);
+}
+
+.yellow_green {
+    background: linear-gradient(180deg, whitesmoke, #B3EF00);
+}
+
+.light_green {
+    background: linear-gradient(180deg, whitesmoke, #43D746);
+}
+
+.button_red {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #EF0000);
+}
+
+.button_orange {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #FF6500);
+}
+
+.button_yellow {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #FFFF00);
+}
+
+.button_green {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #00C900);
+}
+
+.button_light_blue {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #0059FF);
+}
+
+.button_blue {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #0000EC);
+}
+
+.button_light_violet {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #CE00FF);
+}
+
+.button_violet {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #7900D0);
+}
+
+.button_yellow_green {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #B3EF00);
+}
+
+.button_light_green {
+    width: 80px;
+    background: linear-gradient(180deg, whitesmoke, #43D746);
+}
+
+@keyframes td_table {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: -940px;
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@keyframes rotateRivers {
+    0% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+
+@keyframes animateText {
+    0% {
+        stroke: #fff;
+        stroke-width: 0.6;
+        opacity: 0;
+        fill: none;
+        stroke-dasharray: 0;
+    }
+
+    30% {
+        stroke: #fff;
+        stroke-width: 0.6;
+        opacity: 10;
+        fill: none;
+    }
+
+    80% {
+        stroke: #fff;
+        stroke-width: 0.6;
+        fill: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        opacity: 10;
+        fill: #FFE7FF;
+        stroke-dasharray: 660;
+        outline: none;
+        stroke: none;
+    }
+}
